@@ -49,11 +49,13 @@ public class ComparationLinkedlistArraylistApplicationTests {
 	public void insertObjectArrayList() {
 		for(int i = 0; i < 100;i++)
 			arrayListOfInteger.add(INDEX_ARRAY + i, 900);
+		System.out.println(arrayListOfInteger.size());
 	}
 	@Test
 	public void insertObjectLinkedList() {
 		for(int i = 0; i < 100;i++)
 			linkedListOfInteger.add(INDEX_ARRAY + i, 900);
+		System.out.println(linkedListOfInteger.size());
 	}
 	@Test
 	public void removeObjectArrayList() {
@@ -74,5 +76,15 @@ public class ComparationLinkedlistArraylistApplicationTests {
 	public void replaceObjectLinkedList() {
 		for(int i = 0; i < 100;i++)
 			linkedListOfInteger.set(INDEX_ARRAY + i, 88888);
+	}
+	@Test
+	public void readObjectArrayList() {
+		for(int i = 0; i < 100;i++)
+			arrayListOfInteger.get(INDEX_ARRAY + i);
+	}
+	@Test
+	public void readObjectLinkedList() {
+		for(int i = 0; i < 100;i++)
+			linkedListOfInteger.get(INDEX_ARRAY + i);
 	}
 }
